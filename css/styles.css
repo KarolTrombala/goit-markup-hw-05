@@ -84,6 +84,10 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-address:hover,
@@ -109,6 +113,10 @@ body {
   text-decoration: none;
   letter-spacing: 0.02em;
   color: var(--main-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-list-item-link:hover,
@@ -172,7 +180,7 @@ body {
 }
 
 .hero-button {
-  background: var(--higlight-color);
+  background-color: var(--higlight-color);
   box-shadow: 0px 4px 4px var(--box-shadow-color);
   border-radius: 4px;
   font-weight: 700;
@@ -185,6 +193,10 @@ body {
   border-style: none;
   padding: 10px 41px;
   margin: 0 auto;
+
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Nasze atuty, Czym się zajmujemy i Nasz zespół  */
@@ -320,8 +332,13 @@ body {
   padding: 12px;
   height: 44px;
 }
+
 .team-social-link {
   fill: var(--customers-icon);
+
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
@@ -348,6 +365,10 @@ body {
   border-radius: 4px;
   padding: 16px 32px;
   fill: var(--customers-icon);
+
+  transition-property: fill, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-box:hover {
@@ -372,18 +393,22 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
-  background: var(--team-color);
+  background-color: var(--team-color);
   cursor: pointer;
   border-radius: 4px;
   border: none;
 
   padding: 6px 22px;
   margin-right: 8px;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-button:hover,
 .filter-button:focus {
-  background: var(--higlight-color);
+  background-color: var(--higlight-color);
   color: var(--white-color);
 
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -403,8 +428,12 @@ body {
 }
 
 .project-card {
-  background: var(--white-color);
+  background-color: var(--white-color);
   border: 1px solid var(--projects-color);
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-card:hover,
@@ -478,6 +507,10 @@ body {
 .footer-address-link-u {
   color: var(--footer-link-color);
   text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-address-link-u {
@@ -507,4 +540,8 @@ body {
 .footer-social-link {
   background-color: var(--social-icons-background);
   fill: var(--white-color);
+
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
