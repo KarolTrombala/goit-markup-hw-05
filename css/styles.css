@@ -14,6 +14,7 @@
   --customers-icon: #afb1b8;
   --social-icons-background: rgba(255, 255, 255, 0.1);
   --works-background: rgba(47, 48, 58, 0.8);
+  --project-overlay-color: rgba(33, 150, 243, 0.9);
 }
 
 * {
@@ -257,7 +258,7 @@ body {
 .works-item {
   position: relative;
 }
-.works-item img {
+.works-item > img {
   display: block;
 }
 .works-descrip {
@@ -291,7 +292,7 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-card img {
+.team-card > img {
   border-radius: 0px;
 }
 
@@ -437,11 +438,53 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.project-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-overlay > img {
+  display: block;
+}
+
+.project-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--project-overlay-color);
+
+  display: flex;
+  align-items: center;
+
+  transition-property: transform;
+  transform: translateY(100%);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card-overlay > p {
+font-style: inherit;
+font-weight: 400;
+font-size: 18px;
+line-height: 1.56;
+letter-spacing: 0.03em;
+color: var(--white-color);
+
+margin-left: 24px;
+margin-right:24px;
+}
+
+.project-card:hover .project-card-overlay {
+  transform: translateY(0);
+}
 
 .project-card:hover,
 .project-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
 }
 
 .project-card-title {
