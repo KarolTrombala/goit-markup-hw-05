@@ -239,6 +239,10 @@ body {
   transform: translate(-50%, -50%) scale(0.25);
 }
 
+/* .backdrop:not(.is-hidden) .modal-box {
+  transform: translate(50%, 50%) scale(0);
+} */
+
 .hero-button-close {
   position: absolute;
   top: 8px;
