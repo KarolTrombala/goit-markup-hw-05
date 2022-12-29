@@ -215,6 +215,8 @@ body {
   visibility: hidden;
   pointer-events: none;
   opacity: 0;
+
+  transition-delay: 500ms;
 }
 
 .modal-box {
@@ -238,10 +240,6 @@ body {
 .backdrop.is-hidden .modal-box {
   transform: translate(-50%, -50%) scale(0.25);
 }
-
-/* .backdrop:not(.is-hidden) .modal-box {
-  transform: translate(50%, 50%) scale(0);
-} */
 
 .hero-button-close {
   position: absolute;
