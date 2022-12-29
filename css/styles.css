@@ -326,9 +326,7 @@ body {
   position: absolute;
   width: 100%;
   bottom: 0;
-  padding: 27px 90px;
-
-  /* z-index: 1; */
+  padding: 27px;
 }
 
 /* Nasz zespół */
@@ -517,7 +515,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-card-overlay > p {
+.project-card-overlay-text {
   font-style: inherit;
   font-weight: 400;
   font-size: 18px;
@@ -525,8 +523,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--white-color);
 
-  margin-left: 24px;
-  margin-right: 24px;
+  padding: 0 24px;
 }
 
 .project-card:hover .project-card-overlay {
